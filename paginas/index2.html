@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>de Edgardo</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f8ff;
+        }
+
+        h1 {
+            color: #000000;
+            font-size: 48px;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .greeting-container {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .greeting {
+            font-size: 36px;
+            color: #b44646;
+            margin: 20px 0;
+            opacity: 0;
+            animation: slideIn 2s forwards;
+        }
+
+        .greeting:nth-child(2) {
+            animation-delay: 1s;
+        }
+
+        .greeting:nth-child(3) {
+            animation-delay: 2s;
+        }
+
+        .greeting:nth-child(4) {
+            animation-delay: 3s;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideIn {
+            from { transform: translateX(-100%); opacity: 0; }
+            to { transform: translateX(0); opacity: 1; }
+        }
+
+        .footer {
+            margin-top: 50px;
+            font-size: 18px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <h1>KELOKE</h1>
+    
+    <div class="greeting-container">
+        <div class="greeting">Les mando</div>
+        <div class="greeting">un saludo</div>
+        <div class="greeting">mi gente de INSTRAGRAM</div>
+    </div>
+
+    <div class="footer">
+        Hecho con ❤️ para uds.
+    </div>
+</body>
+</html>
